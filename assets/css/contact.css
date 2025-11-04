@@ -1,0 +1,153 @@
+.hero-section {
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  overflow: hidden;
+}
+
+.hero-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.hero-text {
+  background-color: #0d1b2a; 
+  color: white;
+  padding: 40px 20px;
+  width: 100%;
+}
+
+.hero-text .logo {
+  width: 80px;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+.hero-text p {
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: #ddd;
+}
+
+.hero-text h1 {
+  font-size: 32px;
+  font-weight: 700;
+}
+.hero-text ul {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  list-style: none;
+  padding: 0;
+  margin-top: 15px;
+}
+
+.hero-text ul li img {
+  width: 25px;
+  height: 25px;
+  transition: transform 0.3s ease;
+}
+
+.hero-text ul li img:hover {
+  transform: scale(1.1);
+}
+
+
+@media (min-width: 768px) {
+  .hero-section {
+    position: relative;
+  }
+
+  .hero-image img {
+    width: 100%;
+    height: auto;
+  }
+
+  .hero-text {
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+   padding: 170px 70px 170px 70px;
+    width: auto;
+  }
+}
+
+
+
+
+  body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #fff;
+  color: #222;
+}
+
+.section-title {
+  font-weight: 700;
+  letter-spacing: 1px;
+  font-size: 1.8rem;
+}
+
+.text-muted {
+  max-width: 600px;
+  margin: 0 auto;
+  font-size: 0.95rem;
+  color: #777 !important;
+}
+
+.contact-info {
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.contact-info strong {
+  color: #222;
+}
+
+.contact-info p {
+  margin-bottom: 15px;
+}
+
+.form-label {
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.form-control {
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  padding: 10px 12px;
+}
+
+.form-control:focus {
+  border-color: #222;
+  box-shadow: none;
+}
+
+.send-btn {
+  background-color: #fff;
+  color: #222;
+  border: 1;
+  border-radius: 0;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.send-btn:hover {
+  background-color: #222;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 1.5rem;
+  }
+  .contact-info {
+    text-align: center;
+  }
+}

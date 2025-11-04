@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Moon Ceramic</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="./assets/css/base.css">
+  <link rel="stylesheet" href="./assets/css/shop.css">
+</head>
+
+<body>
+
+  <!--  Navbar -->
+  <nav class="navbar navbar-expand-lg bg-white shadow-sm py-3 fixed-top">
+    <div class="container">
+      <!-- Left: Toggle Button -->
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+        <i class="bi bi-list" style="font-size: 1.8rem;"></i>
+      </button>
+
+      <!-- Center: Brand Logo -->
+      <a class="navbar-brand mx-lg-4" href="#">
+        <img src="./assets/img/navbar/logo.svg" alt="Moon Logo">
+      </a>
+
+
+      <!-- Right: Icons -->
+      <div class="d-flex align-items-center ms-auto d-lg-none">
+        <i class="bi bi-cart" style="font-size: 1.5rem;"></i>
+      </div>
+
+      <!-- Collapsible Nav -->
+      <div class="collapse navbar-collapse justify-content-center" id="mainNav">
+        <ul class="navbar-nav mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link active" href="./index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="./shop.html">Shop</a></li>
+          <li class="nav-item"><a class="nav-link" href="./about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="./contact.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./chect-out.html">Chect Out</a></li>
+
+        </ul>
+      </div>
+
+
+      <!-- Right: Icons (Desktop) -->
+      <div class="d-none d-lg-flex align-items-center gap-3">
+        <i class="bi bi-search"></i>
+        <i class="bi bi-person"></i>
+        <i class="bi bi-heart"></i>
+        <i class="bi bi-cart"></i>
+      </div>
+    </div>
+  </nav>
+  <!--end nav -->
+
+
+<section class="my-5">
+  <div class="container">
+    <div class="row">
+      
+      <!-- Sidebar -->
+      <div class="col-lg-3 mb-4">
+        <div class="details">
+          <div class="Category border-top pb-3 pt-3 ">
+            <p class="fw-medium pt-5">Category</p>
+            <div class="form-check ">
+              <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="Dinnerware">
+              <label class="form-check-label" for="inlineCheckbox1">Dinnerware</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="Ceramic">
+              <label class="form-check-label" for="inlineCheckbox2">Ceramic</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="Furniture">
+              <label class="form-check-label" for="inlineCheckbox3">Furniture</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="DecorArt">
+              <label class="form-check-label" for="inlineCheckbox4">Decor Art</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="inlineCheckbox5" value="GiftsSets">
+              <label class="form-check-label" for="inlineCheckbox5">Gifts sets</label>
+            </div>
+          </div>
+
+          <div class="PriceRange border-top pb-3 pt-3">
+            <p class="fw-medium">Price Range</p>
+            <div class="form-check ">
+              <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="0-10">
+              <label class="form-check-label" for="inlineCheckbox1">$0 - $10</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="10-50">
+              <label class="form-check-label" for="inlineCheckbox2">$10 - $50</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="50-100">
+              <label class="form-check-label" for="inlineCheckbox3">$50 - $100</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="100-200">
+              <label class="form-check-label" for="inlineCheckbox4">$100 - $200</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="inlineCheckbox5" value="morethan200">
+              <label class="form-check-label" for="inlineCheckbox5">&gt; $200</label>
+            </div>
+          </div>
+
+          <div class="colors border-top pb-3 pt-3">
+            <p class="fw-medium">Color</p>
+            <div class="color d-flex" style="gap: 10px;">
+              <div class="square" style="background-color: #fff; border: 2px solid; width: 20px; height: 20px;"></div>
+              <div class="square" style="background-color: #c69b7b; width: 20px; height: 20px;"></div>
+              <div class="square" style="background-color: #ccd8ce; width: 20px; height: 20px;"></div>
+              <div class="square" style="background-color: #b4555d; width: 20px; height: 20px;"></div>
+              <div class="square" style="background-color: #9b92a1; width: 20px; height: 20px;"></div>
+            </div>
+          </div>
+
+          <div class="Tags border-top pb-3 pt-3">
+            <p class="fw-medium">Tags</p>
+            <div class="form-check ">
+              <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="Dinnerware">
+              <label class="form-check-label" for="inlineCheckbox1">Dinnerware</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="Ceramic">
+              <label class="form-check-label" for="inlineCheckbox2">Ceramic</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="Furniture">
+              <label class="form-check-label" for="inlineCheckbox3">Furniture</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="DecorArt">
+              <label class="form-check-label" for="inlineCheckbox4">Decor Art</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="inlineCheckbox5" value="GiftsSets">
+              <label class="form-check-label" for="inlineCheckbox5">Gifts sets</label>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+               <!-- Products -->
+        <div class="row g-4 col-9">
+      <!-- Product 1 -->
+      <div class="col-md-4 col-sm-6">
+        <div class="border p-3 h-100 d-flex flex-column">
+          <img src="./assets/img/best seller/Image (2).webp" alt="Small Ecru Ceramic Compote" class="img-fluid mb-3">
+          <h6 class="fw-bold text-uppercase">Small Ecru Ceramic Compote</h6>
+          <p class="fw-semibold">$49.00</p>
+          <p class="text-muted small flex-grow-1">
+            Lorem ipsum dolor sit amet conse boili tetur adipiscing elit.
+          </p>
+          <button class="btn btn-outline-dark mt-auto w-100">Add to cart</button>
+        </div>
+      </div>
+
+      <!-- Product 2 -->
+      <div class="col-md-4 col-sm-6">
+        <div class="border p-3 h-100 d-flex flex-column">
+          <img src="./assets/img/best seller/Image (3).webp" alt="Warrick White Vase 14" class="img-fluid mb-3">
+          <h6 class="fw-bold text-uppercase">Warrick White Vase 14"</h6>
+          <p class="fw-semibold">$49.00</p>
+          <p class="text-muted small flex-grow-1">
+            Lorem ipsum dolor sit amet conse boili tetur adipiscing elit tortor eu.
+          </p>
+          <button class="btn btn-outline-dark mt-auto w-100">Add to cart</button>
+        </div>
+      </div>
+
+      <!-- Product 3 -->
+      <div class="col-md-4 col-sm-6">
+        <div class="border p-3 h-100 d-flex flex-column">
+          <img src="./assets/img//best seller/Image (4).webp" alt="Porcelain Dinner Plate" class="img-fluid mb-3">
+          <h6 class="fw-bold text-uppercase">Porcelain Dinner Plate</h6>
+          <p class="fw-semibold">$49.00</p>
+          <p class="text-muted small flex-grow-1">
+            Lorem ipsum dolor sit amet conse boili tetur.
+          </p>
+          <button class="btn btn-outline-dark mt-auto w-100">Add to cart</button>
+        </div>
+      </div>
+
+      <!-- Product 4 -->
+      <div class="col-md-4 col-sm-6">
+        <div class="border p-3 h-100 d-flex flex-column">
+          <img src="./assets/img/best seller/Image (5).webp" alt="Warrick White Vase 20" class="img-fluid mb-3">
+          <h6 class="fw-bold text-uppercase">Warrick White Vase 20</h6>
+          <p class="fw-semibold">$49.00</p>
+          <p class="text-muted small flex-grow-1">
+            Lorem ipsum dolor sit amet conse boili tetur adipiscing elit tortor eu.
+          </p>
+          <button class="btn btn-outline-dark mt-auto w-100">Add to cart</button>
+        </div>
+      </div>
+
+      <!-- Product 5 -->
+      <div class="col-md-4 col-sm-6">
+        <div class="border p-3 h-100 d-flex flex-column">
+          <img src="./assets/img/best seller/Image (6).webp" alt="Rounded Dual Handled Vase" class="img-fluid mb-3">
+          <h6 class="fw-bold text-uppercase">Rounded Dual Handled Vase</h6>
+          <p class="fw-semibold">$49.00</p>
+          <p class="text-muted small flex-grow-1">
+            Lorem ipsum dolor sit amet conse boili tetur adipiscing elit tortor eu.
+          </p>
+          <button class="btn btn-outline-dark mt-auto w-100">Add to cart</button>
+        </div>
+      </div>
+
+      <!-- Product 6 -->
+      <div class="col-md-4 col-sm-6">
+        <div class="border p-3 h-100 d-flex flex-column">
+          <img src="./assets/img/best seller/Image (7).webp" alt="Marin White Dinner Plate" class="img-fluid mb-3">
+          <h6 class="fw-bold text-uppercase">Marin White Dinner Plate</h6>
+          <p class="fw-semibold">$49.00</p>
+          <p class="text-muted small flex-grow-1">
+            Lorem ipsum dolor sit amet conse boili tetur adipiscing elit.
+          </p>
+          <button class="btn btn-outline-dark mt-auto w-100">Add to cart</button>
+        </div>
+      </div>
+
+      <!-- Product 7 -->
+      <div class="col-md-4 col-sm-6">
+        <div class="border p-3 h-100 d-flex flex-column">
+          <img src="./assets/img/best seller/Image (8).webp" alt="Tall Cream Ceramic Vase" class="img-fluid mb-3">
+          <h6 class="fw-bold text-uppercase">Tall Cream Ceramic Vase</h6>
+          <p class="fw-semibold">$49.00</p>
+          <p class="text-muted small flex-grow-1">
+            Lorem ipsum dolor sit amet conse boili tetur adipiscing elit.
+          </p>
+          <button class="btn btn-outline-dark mt-auto w-100">Add to cart</button>
+        </div>
+      </div>
+
+      <!-- Product 8 -->
+      <div class="col-md-4 col-sm-6">
+        <div class="border p-3 h-100 d-flex flex-column">
+          <img src="./assets/img/best seller/Image (9).webp" alt="Luana Bowl" class="img-fluid mb-3">
+          <h6 class="fw-bold text-uppercase">Luana Bowl</h6>
+          <p class="fw-semibold">$49.00</p>
+          <p class="text-muted small flex-grow-1">
+            Lorem ipsum dolor sit amet conse boili tetur adipiscing elit.
+          </p>
+          <button class="btn btn-outline-dark mt-auto w-100">Add to cart</button>
+        </div>
+      </div>
+            <!-- Product 9 -->
+      <div class="col-md-4 col-sm-6">
+        <div class="border p-3 h-100 d-flex flex-column">
+          <img src="./assets/img//best seller/Image (4).webp" alt="Porcelain Dinner Plate" class="img-fluid mb-3">
+          <h6 class="fw-bold text-uppercase">Porcelain Dinner Plate</h6>
+          <p class="fw-semibold">$49.00</p>
+          <p class="text-muted small flex-grow-1">
+            Lorem ipsum dolor sit amet conse boili tetur.
+          </p>
+          <button class="btn btn-outline-dark mt-auto w-100">Add to cart</button>
+        </div>
+      </div>
+
+    </div>
+          
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+  
+    <!-- start footer -->
+  <footer class="footer text-white bg-dark py-5" style="background-color: #3a3845;">
+    <div class="container">
+      <div class="row justify-content-between">
+
+        <!-- Left side -->
+        <div class="col-md-4 mb-4">
+          <img src="./assets/img/footer/logo (1).svg" class="mb-3" width="120">
+          <p class="opacity-75">Lorem ipsum dolor sit amet consectetur adipiscing elit aliquam mauris sed ma</p>
+          <button class="btn btn-outline-light rounded-0">GET STARTED</button>
+        </div>
+
+        <!-- Right side -->
+        <div class="col-md-7">
+          <div class="row">
+            <nav class="col-md-4 mb-3">
+              <h5 class="text-uppercase fs-6 fw-bold">About Us</h5>
+              <ul class="list-unstyled">
+                <li><a href="#" class="text-white-50 text-decoration-none">Mission</a></li>
+                <li><a href="#" class="text-white-50 text-decoration-none">Our Team</a></li>
+                <li><a href="#" class="text-white-50 text-decoration-none">Awards</a></li>
+                <li><a href="#" class="text-white-50 text-decoration-none">Testimonials</a></li>
+                <li><a href="#" class="text-white-50 text-decoration-none">Privacy Policy</a></li>
+              </ul>
+            </nav>
+            <nav class="col-md-4 mb-3">
+              <h5 class="text-uppercase fs-6 fw-bold">Services</h5>
+              <ul class="list-unstyled">
+                <li><a href="#" class="text-white-50 text-decoration-none">Web Design</a></li>
+                <li><a href="#" class="text-white-50 text-decoration-none">Web Development</a></li>
+                <li><a href="#" class="text-white-50 text-decoration-none">Mobile Design</a></li>
+                <li><a href="#" class="text-white-50 text-decoration-none">UI/UX Design</a></li>
+                <li><a href="#" class="text-white-50 text-decoration-none">Branding Design</a></li>
+              </ul>
+            </nav>
+            <nav class="col-md-4 mb-3">
+              <h5 class="text-uppercase fs-6 fw-bold">Portfolio</h5>
+              <ul class="list-unstyled">
+                <li><a href="#" class="text-white-50 text-decoration-none">Corporate Websites</a></li>
+                <li><a href="#" class="text-white-50 text-decoration-none">E-commerce</a></li>
+                <li><a href="#" class="text-white-50 text-decoration-none">Mobile Apps</a></li>
+                <li><a href="#" class="text-white-50 text-decoration-none">Landing Pages</a></li>
+                <li><a href="#" class="text-white-50 text-decoration-none">UI/UX Projects</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom line -->
+      <div class="text-center border-top border-light mt-4 pt-3">
+        <p class="mb-0 opacity-50">Copyright © 2023 Moon |
+          <a href="#" class="text-white-50 text-decoration-underline">Terms and Conditions</a> |
+          <a href="#" class="text-white-50 text-decoration-underline">Privacy Policy</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

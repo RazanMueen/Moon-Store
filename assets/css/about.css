@@ -1,0 +1,20 @@
+.footer {
+  font-family: "Cormorant Garamond", serif;
+}
+
+.footer a:hover {
+  color: #fff !important;
+}
+
+.myFont {
+  font-family: "Cormorant Garamond", serif;
+  letter-spacing: 1px;
+}
+
+.my-btn {
+  border-bottom: 1px solid #ccc;
+  background-color: #fff;
+  border-radius: 0;
+  padding: 10px;
+  transition: all 0.3s ease;
+}
